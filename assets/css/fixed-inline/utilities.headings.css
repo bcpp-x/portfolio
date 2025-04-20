@@ -20,6 +20,7 @@
     --_lh: 1.1;
     --_fw: 700;
     --_alt-color: var(--color-primary-400);
+    --_mb: 1rem;
     
     font-size: var(--heading-fz, var(--_fz));
     font-weight: var(--heading-fw, var(--_fw));
@@ -27,6 +28,7 @@
     letter-spacing: var(--heading-ls, -0.03em);
     color: var(--heading-color, inherit);
     max-width: var(--heading-max-w, inherit);
+    margin-bottom: var(--heading-mb, var(--_mb));
 }
 
 .u-heading.u-heading--md{

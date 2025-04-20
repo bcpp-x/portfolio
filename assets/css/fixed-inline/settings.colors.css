@@ -7,31 +7,11 @@
     /* ! COLORS */
 
     /* * Primary */
-    --color-primary-400: #BA271A; 
-    --color-primary-400-hsl: 5 75% 42%;
-    --color-primary-300: #D62E1F; 
+    --color-primary: #5271ff; 
 
     /* * Neutral */
-
     --color-neutral-100: #FFFFFF;
-    --color-neutral-200: #F4F4F4;
-    --color-neutral-300: #E2E2E2;
-    --color-neutral-400: #BFBFBF;
-    --color-neutral-500: #929292;
-    --color-neutral-600: #656565;
+    --color-neutral-400: #f2f2f1;
     --color-neutral-800: #1E1E1E;
-    --color-neutral-900: #000000;
-    --color-neutral-100-hsl: 0 0% 100%;
-    --color-neutral-500-hsl: 0 0% 57%;
-    --color-neutral-800-hsl: 0 0% 12%;
-    --color-neutral-900-hsl: 0 0% 0%;
-
-    --color-marine: #083F88;
-
-    /* * Hover, etc */
-    --color-hover: #6b170f;
-    --color-error: #BA271A;
-    --color-success: #008000;
-    --color-wsp: #4C9A30;
 
 }
