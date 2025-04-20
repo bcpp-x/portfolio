@@ -1,0 +1,94 @@
+/* ******************************************** */
+/** COMPONENT: HEADINGS
+/* ******************************************** */
+
+/*
+  ! HEADING
+  OVERRIDES:
+    * // --heading-ff               // Font family
+    * // --heading-fz               // Font size
+    * // --heading-fw               // Font weight
+    * // --heading-lh               // Line height
+    * // --heading-ls               // Letter spacing
+    * // --heading-color            // Color
+    * // --heading-strong-color     // Strong Color
+    * // --heading-strong-fw        // Strong Font weight
+*/
+
+.u-heading{
+    --_fz: var(--fz-800);
+    --_lh: 1.1;
+    --_fw: 700;
+    --_alt-color: var(--color-primary-400);
+    
+    font-size: var(--heading-fz, var(--_fz));
+    font-weight: var(--heading-fw, var(--_fw));
+    line-height: var(--heading-lh, var(--_lh));
+    letter-spacing: var(--heading-ls, -0.03em);
+    color: var(--heading-color, inherit);
+    max-width: var(--heading-max-w, inherit);
+}
+
+.u-heading.u-heading--md{
+    --_fz: var(--fz-700);
+}
+
+.u-heading.u-heading--xs{
+    --_fz: var(--fz-600);
+}
+
+.u-heading--alt{
+    color: var(--heading-color, var(--_alt-color));
+}
+
+.u-heading--centered{
+    text-align: center;
+    margin-inline: auto;
+}
+
+.u-heading--mb{
+    margin-bottom: calc(var(--section-y)*.5);
+}
+
+/* Subtitle */
+
+.u-heading + .u-subtitle{
+    margin-top: 1em;
+}
+
+.u-subtitle{
+    font-size: var(--fz-300);
+    margin-bottom: 3em;
+}
+
+.u-subtitle:has(+ .u-text){
+    margin-bottom: 0;
+}
+
+.u-subtitle strong{
+    text-transform: uppercase;
+}
+
+.u-subtitle span{
+    font-weight: 400;
+}
+
+.u-subtitle + .u-text{
+    margin-top: 2em;
+}
+
+/* Kicker */
+
+.u-kicker{
+    --_fz: var(--fz-300);
+    --_lh: 1.1;
+    --_fw: 500;
+    
+    display: block;
+    font-size: var(--kicker-fz, var(--_fz));
+    font-weight: var(--kicker-fw, var(--_fw));
+    line-height: var(--kicker-lh, var(--_lh));
+    color: var(--kicker-color, inherit);
+    max-width: var(--kicker-max-w, inherit);
+    margin-bottom: .2em;
+}
