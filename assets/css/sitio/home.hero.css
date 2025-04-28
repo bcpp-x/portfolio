@@ -6,55 +6,22 @@
 
 .c-home-hero {
   --_fz-text: var(--fz-300);
+  --_color: var(--color-neutral-100);
   --heading-mb: 2.5rem;
+  --_lh: 1.5;
+
 
   font-size: var(--_fz-text, var(--fz-100));
-  background-color: var(--color-neutral-400);
+  background-color: var(--color-neutral-800);
+  color: var(--_color);
+  line-height: var(--_lh);
 
-  position: relative;
-  z-index: -2;
-  height: 155vh;
 }
 
-.c-home-hero__text {
-  --_fz: 25rem;
 
-  font-size: var(--_fz, var(--fz-900));
-  font-family: var(--alt-font);
-  color: var(--color-neutral-100);
 
-  position: relative;
-  top: -12rem;
-  left: 0;
-  z-index: -1;
-}
 
-.c-home-hero__info {
-  position: relative;
-  left: 0;
-  top: -20rem;
-  z-index: 4;
-}
 
-.c-home-hero__image {
-  max-width: 25rem;
-  position: relative;
-  right: 0;
-  top: -15rem;
-
-  overflow: hidden;
-}
-
-.c-home-hero__figcaption {
-  position: absolute;
-  transform: rotate(90deg);
-  right: -10rem;
-  top: 5rem;
-}
-
-.c-home-hero p {
-  padding-block: 0.5rem;
-}
 
 /* ********************** SHORT MOBILE ********************** */
 
@@ -86,15 +53,6 @@
 
 @media (min-width: 61.25rem) {
   /* 980px */
-
-  .c-home-hero__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .c-home-hero{
-    height: 100vh;
-  }
 }
 
 /* ********************** de Desktop a DESKTOP 2 ********************** */
@@ -102,31 +60,6 @@
 @media (min-width: 75rem) {
   /* 1200px */
 
-
-  .c-home-hero__text {
-    --_fz: 50rem;
-
-    top: -30rem;
-    left: -10rem;
-  }
-
-  .c-home-hero__info {
-    left: 0;
-    top: -50%;
-    max-width: 80%;
-    text-wrap: balance;
-  }
-
-  .c-home-hero__image {
-    max-width: 45rem;
-
-  }
-
-  .c-home-hero__figcaption {
-    transform: none;
-    right: 0;
-    top: 20%;
-  }
 
 
 }
@@ -147,11 +80,6 @@
 
 @media (min-width: 100rem) {
   /* 1600px */
-
-  .c-home-hero__image {
-    max-width: 55rem;
-  }
-
 }
 
 @media (min-width: 100rem) and (min-height: 49.375rem) {

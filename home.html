@@ -13,58 +13,96 @@
     <link rel="stylesheet" href="/assets/css/home.css">
 
 
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+
 </head>
 
 <body>
 
-    <!-- HERO: Start -->
-    <div class="o-section c-home-hero">
-        <div class="c-home-hero__wrapper o-wrapper">
-            <div>
-                <span class="c-home-hero__text">Ey!</span>
+    <div class="swiper jsSwiperHome">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide o-section c-home-hero">
+            <div class="c-home-hero__info o-wrapper">
+                <h1 class="u-heading">Web Designer</h1>
 
-                <div class="c-home-hero__info">
+                <p class="u-text">
+                    Soy desarrolladora web con efoque en UX/UI. <br>Creativa con interés en proyectos con
+                    <strong>propósito</strong>, donde
+                    el diseño tenga un impacto real en la experiencia de los usuarios. Busco entender el contexto,
+                    participar activamente en las decisiones y aportar una mirada integral. <br>
+                    Disfruto <strong>comunicar ideas, proponer</strong> hipótesis, <strong>explorar cómo
+                        funcionan</strong> las cosas y pensar <strong>cómo podrán mejorar.</strong>
+                </p>
 
-                    <h1 class="u-heading">Web developer</h1>
-                    <p>
-                        Me interesa trabajar en proyectos con propósito, donde el diseño tenga un impacto real en la
-                        experiencia de las personas.
-                    </p>
-    
-                    <p>
-                        Más que tareas técnicas aisladas, busco entender el contexto, participar activamente en las
-                        decisiones y aportar una mirada integral.
-                    </p>
-    
-                    <p>
-                        Disfruto comunicar ideas, proponer hipótesis, explorar cómo funcionan las cosas y pensar cómo
-                        podrían mejorar.
-                    </p>
-                </div>
-                </div>
+            </div>
 
-
-            <figure class="c-pic">
-                <img class="c-home-hero__image" src="/assets/images/static/avatar.png"
-                    alt="Retrato tipo avatar blanco y negro">
-                <figcaption class="c-home-hero__figcaption">
-                    <span>Yep! mi nombre es <strong>Bruna</strong> :)</span>
-                </figcaption>
-            </figure>
-
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
         </div>
-    </div>
-
-    <div>
-        <h2>Hola mundo</h2>
-    </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="/assets/js/sitio/swiper-init.js"></script>
 </body>
 
 </html>
